@@ -1,5 +1,5 @@
 import org.springframework.beans.factory.annotations.Autowire;
-import org.springframework.http.ReponsEntity;
+import org.springframework.http.ReponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.persistence.EntityNotFoundException;
 
@@ -42,7 +42,7 @@ public class ApplianceController  {
             return ReponsEntity.notFound().build();
         }
        catch(IllegalArgumentException e) {
-             return ReponsEntity.badRequest().body(null);
+             return ReponseEntity.badRequest().body(null);
         }
     }
 

@@ -11,10 +11,10 @@ public class Appliance  {
         @GeneratedId(GenerationType = "IDENTITY")
         private Long id;
 
-        @Column(Nullable = False)
+        @Column(Nullable = false)
         private String ApplianceType;  // Light, Fan or Air Conditioner
 
-        @Column(Nullable = False)
+        @Column(Nullable = false)
         private boolean isOn;
 
         @Column
