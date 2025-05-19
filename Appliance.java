@@ -1,5 +1,5 @@
 // Model for home appliance
-import javax.persistence.*
+import javax.persistence.*;
 import Lombok.Data;
 
 @Entity
