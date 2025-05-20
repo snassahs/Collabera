@@ -1,4 +1,5 @@
-//Service for home appliance
+package com.example;
+
 import org.springframework.beans.factory.annotations.Autowire;
 import org.springframework.stereotype.Service;
 import javax.persistence.EntityNotFoundException;
@@ -38,7 +39,7 @@ public class ApplianceService {
   }
 
   public Appliance turnOffAllAppliance(Long id) {
-      List[] allAppliances = repository.getAllAppliances();
+      List[] allAppliances = repository.getReferenceById(id);
        for(Appliance appliance : allAppliances) {
           appliance.isOn(false);
           repository.save(appliance); 

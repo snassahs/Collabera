@@ -1,4 +1,5 @@
-// Model for home appliance
+package com.example;
+
 import javax.persistence.*;
 import Lombok.Data;
 
